@@ -15,6 +15,11 @@ class CreateCampanhasTable extends Migration
     {
         Schema::create('campanhas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('nome');
+            $table->date('dataInicio');
+            $table->date('dataFim');
+            $table->string('valorComissao');
+            $table->string('gerente');
             $table->timestamps();
         });
     }

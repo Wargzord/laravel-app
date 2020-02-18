@@ -15,6 +15,12 @@ class CreateCriativosTable extends Migration
     {
         Schema::create('criativos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->tinyInteger('campanha_id');
+            $table->index('campanha_id');
+            $table->string('tipo');
+            $table->string('urlRedirect');
+            $table->string('urlImage');
+            $table->string('codCupom')->nullable();
             $table->timestamps();
         });
     }
