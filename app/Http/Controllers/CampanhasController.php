@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Campanha;
-use Auth;
 
 class CampanhasController extends Controller
 {

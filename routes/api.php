@@ -35,3 +35,9 @@ Route::get('campanhas/{campanha}', 'CampanhasController@show');
 Route::post('campanhas', 'CampanhasController@store');
 Route::put('campanhas/{campanha}', 'CampanhasController@update');
 Route::delete('campanhas/{campanha}', 'CampanhasController@delete');
+
+Route::get('criativos', 'CriativoController@index');
+Route::get('criativos/{campanha}', 'CriativoController@show');
+Route::post('criativos', 'CriativoController@store');
+Route::put('criativos/{campanha}', 'CriativoController@update');
+Route::delete('criativos/{campanha}', 'CriativoController@delete');
