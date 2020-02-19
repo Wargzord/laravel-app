@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+Use App\Campanha;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('register', 'Auth\RegisterController@register');
+ 
+Route::get('campanhas', 'CampanhasController@index');
+Route::get('campanhas/{campanha}', 'CampanhasController@show');
+Route::post('campanhas', 'CampanhasController@store');
+Route::put('campanhas/{campanha}', 'CampanhasController@update');
+Route::delete('campanhas/{campanha}', 'CampanhasController@delete');
