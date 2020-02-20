@@ -14,6 +14,7 @@ class CriativoController extends Controller
 
     public function show(Criativo $criativo)
     {
+        $criativo->campanha;
         return $criativo;
     }
 

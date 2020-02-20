@@ -18,3 +18,4 @@ Route::get('/', function () {
 // Auth::routes();
 
 Route::resource('campanhas', 'CampanhasFrontController');
+Route::resource('criativos', 'CriativoFrontController');

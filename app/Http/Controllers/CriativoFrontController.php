@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CampanhasFrontController extends Controller
+class CriativoFrontController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class CampanhasFrontController extends Controller
      */
     public function index()
     {
-        return view('campanhas.index');
+        return view('criativos.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class CampanhasFrontController extends Controller
      */
     public function create()
     {
-        return view('campanhas.create');
+        return view('criativos.create');
     }
 
     /**
@@ -45,8 +45,8 @@ class CampanhasFrontController extends Controller
      */
     public function show($id)
     {
-        $data['campanha'] = $id;
-        return view('campanhas.show', $data);
+        $data['criativo'] = $id;
+        return view('criativos.show', $data);
     }
 
     /**
@@ -57,8 +57,8 @@ class CampanhasFrontController extends Controller
      */
     public function edit($id)
     {
-        $data['campanha'] = $id;
-        return view('campanhas.edit', $data);
+        $data['criativo'] = $id;
+        return view('criativos.edit', $data);
     }
 
     /**
